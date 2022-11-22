@@ -1,0 +1,59 @@
+public class Employee {
+    public int ep_id;
+    public String name;
+    public String depart;
+    public double salary;
+    public double bouns;
+    public boolean resident;
+    public String print_id;
+    public Employee(){
+
+    }
+
+    public void Employee (int e,String n) {
+        ep_id=e;
+        name=n;
+    }
+    public void Employee(int e,String n,boolean r){
+        ep_id=e;
+        name=n;
+        resident=r;
+    }
+    public void Employee(int e,String n,String d,double sa,double bo,boolean re){
+        ep_id=e;
+        name=n;
+        salary=sa;
+        bouns=bo;
+        resident=re;
+    }
+
+    public void setEp_id(int ep_id) {
+        this.ep_id = ep_id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDepart(String depart) {
+        this.depart = depart;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setBouns(double bouns) {
+        this.bouns = bouns;
+    }
+
+    public void setResident(boolean resident) {
+        this.resident = resident;
+    }
+    public void print_id() {
+        print_id=print_id;
+        System.out.print("emp_ID :"+ep_id + "name: " + name+"depart:"+depart+"salary :"+salary+"bouns :"+bouns+"resident :"+resident);
+    }
+
+
+}
